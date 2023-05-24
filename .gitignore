@@ -2,3 +2,4 @@ include
 lib
 game.exe
 Makefile
+.gitignore
