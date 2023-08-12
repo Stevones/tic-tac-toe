@@ -1,13 +1,21 @@
 #include "tictactoe.h"
 
+
+int screenWidth = 800;
+int screenHeight = 800;
+
+
 int main() {
 
 
-    int screenWidth = 800;
-    int screenHeight = 800;
+
 
     InitWindow(screenWidth, screenHeight, "Tic Tac Toe");
-    
+
+    Texture2D title = loadImage("resources/title.png");
+    Texture2D titleScreenImages[] = {title};
+
+
     SetTargetFPS(60);
 
 
@@ -15,8 +23,9 @@ int main() {
     
         BeginDrawing();
 
-        ClearBackground(RAYWHITE);
-
+        ClearBackground(BLACK);
+        drawTitleScreen(titleScreenImages);
+        
         EndDrawing();
 
 
