@@ -4,18 +4,21 @@
 
 
 Texture2D loadImage(char* imagePath);
-void drawTitleScreen(Texture2D titleScreenImages[]);
+void drawTitleScreen();
+void loadTitleResources();
 
 
-extern Texture2D title;
-extern Texture2D background;
+
+
+
 extern int screenWidth;
 extern int screenHeight;
 
-extern struct Button {
+typedef struct {
 
 	Rectangle rect;
 	int isButtonClicked;
+	Texture2D image;
 
 } Button;
 

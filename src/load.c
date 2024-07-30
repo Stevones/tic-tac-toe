@@ -18,5 +18,3 @@ Texture2D loadImage(char* imagePath) {
     return texture;
 }
 
-
-
