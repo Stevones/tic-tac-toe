@@ -6,6 +6,7 @@
 Texture2D loadImage(char* imagePath);
 void drawTitleScreen();
 void loadTitleResources();
+void buttonHover();
 
 
 
